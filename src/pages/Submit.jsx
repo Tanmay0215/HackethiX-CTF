@@ -1,11 +1,11 @@
-import EventForm from "../components/EventForm";
+import EventForm from '../components/EventForm'
 
 function Submit() {
   return (
-    <div className="h-screen w-[100vw]">
+    <div className="min-h-screen bg-gray-800">
       <EventForm />
     </div>
-  );
+  )
 }
 
-export default Submit;
+export default Submit

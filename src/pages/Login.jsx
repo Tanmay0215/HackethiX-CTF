@@ -19,14 +19,14 @@ const LoginPage = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-green-500">
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-gray-400">
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center mb-6 uppercase">
+        <h2 className="text-3xl font-semibold text-center mb-6 uppercase">
           Login Form
         </h2>
         <form className="">
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium mb-2">
+            <label htmlFor="email" className="block font-semibold mb-2">
               Email
             </label>
             <input
@@ -36,13 +36,13 @@ const LoginPage = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
               required
-              className="w-full p-3 rounded-lg bg-gray-700 border border-green-500 text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full p-3 rounded-lg bg-gray-700 text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
           <div className="mb-6">
             <label
               htmlFor="password"
-              className="block text-sm font-medium mb-2"
+              className="block mb-2"
             >
               Password
             </label>
@@ -53,7 +53,7 @@ const LoginPage = () => {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
               required
-              className="w-full p-3 rounded-lg bg-gray-700 border border-green-500 text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full p-3 rounded-lg bg-gray-700 text-green-500 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
           <button
