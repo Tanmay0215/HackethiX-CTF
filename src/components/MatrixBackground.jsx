@@ -37,7 +37,7 @@ const MatrixBackground = () => {
   }, [])
 
   return (
-    <canvas id="matrix" className="w-full h-screen -z-100" />
+    <canvas id="matrix" className="fixed top-0 left-0 w-full h-full -z-50 opacity-20 pointer-events-none" />
   )
 }
 

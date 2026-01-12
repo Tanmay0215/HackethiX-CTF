@@ -10,24 +10,30 @@ import 'react-toastify/dist/ReactToastify.css'
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-32 flex flex-col">
       <ToastContainer
         position="top-center"
-        autoClose={5000}
+        autoClose={3000}
         hideProgressBar={false}
-        closeOnClick={true}
-        pauseOnHover={true}
-        draggable={true}
-        pauseOnFocusLoss={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        toastClassName="glass-panel text-white border border-green-500/30"
       />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/flag" element={<Flag />} />
-        <Route path="/submit" element={<Submit />} />
-        <Route path="/leaderboard" element={<Leaderboard />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/flag" element={<Flag />} />
+          <Route path="/submit" element={<Submit />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </div>
   )
 }

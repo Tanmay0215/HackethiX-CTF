@@ -1,4 +1,5 @@
 import LeaderboardComp from '../components/LeaderboardComp';
+import MatrixBackground from '../components/MatrixBackground';
 
 function Leaderboard() {
   const leaderboardData = [
@@ -11,7 +12,8 @@ function Leaderboard() {
   ];
 
   return (
-    <div className='h-[100vh] w-[100vw] bg-gray-600'>
+    <div className="relative min-h-[80vh] flex flex-col items-center">
+      <MatrixBackground />
       <LeaderboardComp data={leaderboardData} />
     </div>
   );
