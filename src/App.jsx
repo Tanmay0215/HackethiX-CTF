@@ -8,7 +8,12 @@ import Leaderboard from './pages/Leaderboard'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
+import { useEffect } from 'react'
+
 function App() {
+  useEffect(() => {
+    localStorage.setItem('debug_mode', 'CTF{l0c4l_st0r4g3_d3t3ct1v3}')
+  }, [])
   return (
     <div className="min-h-screen pt-32 flex flex-col">
       <ToastContainer

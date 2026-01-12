@@ -4,6 +4,7 @@
 @theme {
   --color-hack-green: #00ff41;
   --color-hack-dark: #0d1117;
+  --secret-flag: 'CTF{css_v4r_m4st3r}';
   --font-sans: 'Manrope', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
   --animate-float: float 6s ease-in-out infinite;

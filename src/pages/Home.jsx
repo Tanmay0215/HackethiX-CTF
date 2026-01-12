@@ -35,7 +35,10 @@ function Home() {
       
       {/* Hero Section */}
       <div className="w-full max-w-6xl mx-auto px-4 mt-10 text-center z-10">
-        <div className="inline-block mb-4 px-4 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-mono tracking-widest uppercase">
+        <div 
+          className="inline-block mb-4 px-4 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-mono tracking-widest uppercase"
+          data-secret="CTF{d0m_1nsp3ct0r_g4dg3t}"
+        >
           System Online • v2.0.4
         </div>
         
